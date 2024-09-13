@@ -3,7 +3,7 @@ from openai import OpenAI
 import streamlit as st
 
 # Configuración de la página Streamlit
-st.set_page_config(page_title="DALL-E 3 Image Generation")
+st.set_page_config(page_title="Brainstorm generador de Imagenes")
 
 # Función para generar la imagen
 def generate_image(image_description):
@@ -32,10 +32,10 @@ def generate_image(image_description):
 
 img_description = st.text_input('ESCRIBE LA IMAGEN A GENERAR')
 
-if st.button('Generate Image'):
+if st.button('Generar Imagen'):
     if img_description:
         try:
-            with st.spinner('Generating image...'):
+            with st.spinner('Generando imagen...'):
                 generated_img = generate_image(img_description)
             st.image(generated_img)
         except Exception as e:
