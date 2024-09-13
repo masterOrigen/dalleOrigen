@@ -28,10 +28,9 @@ def generate_image(image_description):
         raise Exception(f"Error al generar la imagen: {str(e)}")
 
 # Interfaz de usuario de Streamlit
-st.title('DALL-E 3 Image Generation')
-st.subheader("Powered by OpenAI and Streamlit")
 
-img_description = st.text_input('Image Description')
+
+img_description = st.text_input('ESCRIBE LA IMAGEN A GENERAR')
 
 if st.button('Generate Image'):
     if img_description:
