@@ -30,7 +30,7 @@ def generate_image(image_description):
 # Interfaz de usuario de Streamlit
 
 
-img_description = st.text_input('ESCRIBE LA IMAGEN A GENERAR')
+img_description = st.text_input('Hola! describe de la forma más detallada posible la imagen que te gustaría te ayude a generar.')
 
 if st.button('Generar Imagen'):
     if img_description:
